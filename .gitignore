@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+
+# Environment files
+.env
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# IDE-related files
+.idea/
+.vscode/
+
+# Build directory (if applicable)
+build/
+dist/
+
+# MongoDB and database data (if you're saving it in the project directory)
+data/
