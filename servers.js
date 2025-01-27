@@ -8,6 +8,7 @@ const { port } = require("./config/default");
 
 // Import Routes
 const authRoutes = require("./routes/auth");
+const customerRoutes = require("./routes/customer");
 
 // Initialize App
 const app = express();
@@ -21,6 +22,9 @@ connectDB();
 
 // Routes
 app.use("/api/auth", authRoutes);
+
+// Routes for Customers (e.g., create, get customers)
+app.use("/api/customers", customerRoutes);
 
 // Error handling middleware (this should always be at the end)
 app.use(errorHandler);
